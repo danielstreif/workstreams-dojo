@@ -16,13 +16,13 @@ export function getComments() {
     };
 }
 
-export function addComment(input, timestamp) {
+export function addComment({ text, author, createdDate }) {
     return {
         type: "ADD_COMMENT",
         newComment: {
-            text: input,
-            author: "Daniel",
-            createdDate: timestamp,
+            text: text,
+            author: author,
+            createdDate: createdDate,
         },
     };
 }

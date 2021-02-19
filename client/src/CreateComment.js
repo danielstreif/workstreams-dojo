@@ -8,7 +8,13 @@ export default function CreateComment() {
 
     const handleKeyPress = (e) => {
         if (e.key === "Enter") {
-            dispatch(addComment(input, new Date(Date.now()).toUTCString()));
+            dispatch(
+                addComment({
+                    text: input,
+                    author: "Daniel",
+                    createdDate: new Date(Date.now()).toUTCString(),
+                })
+            );
             return setInput();
         } else if (e.key === "Escape") {
             return setInput();
