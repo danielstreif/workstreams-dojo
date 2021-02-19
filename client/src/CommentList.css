@@ -1,0 +1,33 @@
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.comment-container {
+    width: 500px;
+}
+
+.comment {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.comment-text {
+    font-weight: bold;
+}
+
+.comment-info {
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+}
+
+textarea {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: medium;
+}
